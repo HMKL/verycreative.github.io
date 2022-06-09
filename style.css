@@ -13,7 +13,7 @@
       rgba(92, 77, 66, 0.5) 0%,
       rgba(92, 77, 66, 0.5) 100%
     ),
-    url(/src/hero.png);
+    url(./src/hero.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -21,11 +21,11 @@
 }
 
 .support {
-  background-image: url(/src/Rectangle\ 63.png);
+  background-image: url(./src/Rectangle\ 63.png);
   background-size: cover;
 }
 .customer {
-  background-image: url(/src/customer\ background.png);
+  background-image: url(./src/customer\ background.png);
   background-size: cover;
   object-fit: contain;
   background-repeat: round;
@@ -37,7 +37,7 @@
       rgb(4, 61, 114, 0.5) 0%,
       rgb(5, 104, 144, 0.5) 100% /* rgba(5, 104, 144, 1) */
     ),
-    url(/src/Depositphotos_31419591_XL.png);
+    url(./src/Depositphotos_31419591_XL.png);
   background-size: cover;
   background-repeat: round;
   background-attachment: scroll;
