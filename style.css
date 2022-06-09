@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+  font-family: "Josefin Sans", sans-serif;
+  /* color: white; */
+}
+
+.asd {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.5) 0%,
+      rgba(92, 77, 66, 0.5) 100%
+    ),
+    url(/src/hero.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+}
+
+.support {
+  background-image: url(/src/Rectangle\ 63.png);
+  background-size: cover;
+}
+.customer {
+  background-image: url(/src/customer\ background.png);
+  background-size: cover;
+  object-fit: contain;
+  background-repeat: round;
+}
+.car {
+  /* background-image: url(/src/Depositphotos_31419591_XL.png); */
+  background-image: linear-gradient(
+      to bottom,
+      rgb(4, 61, 114, 0.5) 0%,
+      rgb(5, 104, 144, 0.5) 100% /* rgba(5, 104, 144, 1) */
+    ),
+    url(/src/Depositphotos_31419591_XL.png);
+  background-size: cover;
+  background-repeat: round;
+  background-attachment: scroll;
+  object-fit: contain;
+}
+.fa-phone-flip {
+  background-color: #08a1ff;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+.owl-carousel .owl-nav.disabled {
+  display: block;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  color: black;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #d6d6d6;
+  display: inline-block;
+  cursor: pointer;
+
+  border-radius: 3px;
+}
+.card {
+  height: 20rem;
+  border-radius: 0.6rem;
+  background-color: #04325d;
+  color: #fff;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+}
