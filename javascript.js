@@ -27,7 +27,7 @@ console.log(getRowsDiv);
 $('.owl-carousel').owlCarousel({
   loop: true,
   margin: 10,
-  dots: true,
+  // dots: true,
   responsiveClass: true,
   responsive: {
     0: {
@@ -36,7 +36,7 @@ $('.owl-carousel').owlCarousel({
     },
     600: {
       items: 3,
-    //   nav: true,
+      nav: true,
     },
 
   },
