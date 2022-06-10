@@ -4,10 +4,30 @@
   transition-duration: 0.6s;
   transition-timing-function: ease;
   font-family: "Josefin Sans", sans-serif;
-  /* color: white; */
 }
 
-.asd {
+a,
+p,
+h3,
+h2,
+.nav-link {
+  color: white;
+}
+h4 {
+  color: #08a1ff;
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.hero {
   background-image: url(./src/big\ hero.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,20 +41,12 @@
 .customer {
   background-image: url(./src/customer\ background.png);
   background-size: cover;
-  object-fit: contain;
   background-repeat: round;
 }
 .car {
-  background-image: linear-gradient(
-      to bottom,
-      rgb(4, 61, 114, 0.5) 0%,
-      rgb(5, 104, 144, 0.5) 100%
-    ),
-    url(./src/Group\ 4983.png);
+  background-image: url(./src/Group\ 4983.png);
   background-size: cover;
   background-repeat: round;
-  object-fit: contain;
-  mask-image: linear-gradient(black, transparent);
 }
 .fa-phone-flip {
   background-color: #08a1ff;
@@ -49,7 +61,16 @@
   background-color: #04325d;
   color: #fff;
 }
+._1 {
+  border-left: 0.5rem solid #08a1ff;
+}
 
+._2 {
+  text-align: center;
+}
+._3 {
+  border-right: 1px dashed grey;
+}
 .owl-carousel .owl-nav.disabled {
   display: block;
 }
