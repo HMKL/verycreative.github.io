@@ -44,9 +44,17 @@ ul {
   background-repeat: round;
 }
 .car {
-  background-image: url(./src/Group\ 4983.png);
+  background-image: url(./src/Depositphotos_31419591_XL.png);
   background-size: cover;
   background-repeat: round;
+  background-color: #063964;
+}
+.mask {
+  background-image: url(./src/Mask\ Group\ 1.png);
+  background-size: cover;
+  background-repeat: round;
+  background-color: #063964;
+  /* height: 100vh; */
 }
 .fa-phone-flip {
   background-color: #08a1ff;
@@ -55,11 +63,18 @@ ul {
   padding: 1rem;
   color: #fff;
 }
-.card {
+.card.one {
   height: 20rem;
   border-radius: 0.6rem;
   background-color: #04325d;
   color: #fff;
+}
+.card.two {
+  height: 20rem;
+  border-radius: 0.6rem;
+  background-color: #f4f4f4;
+  color: #000;
+  border: none;
 }
 ._1 {
   border-left: 0.5rem solid #08a1ff;
@@ -70,6 +85,9 @@ ul {
 }
 ._3 {
   border-right: 1px dashed grey;
+}
+._4 {
+  height: 50vh;
 }
 .owl-carousel .owl-nav.disabled {
   display: block;

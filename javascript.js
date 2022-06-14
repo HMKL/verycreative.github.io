@@ -12,6 +12,8 @@ function check(e) {
     getContainer[2].classList.add('pb-4');
     getContainer[2].classList.remove('pb-5');
     getContainer[3].classList.remove('pb-5', 'pt-5');
+    getContainer[5].classList.add('flex-column');
+    getContainer[5].classList.remove('_4');
     getRowsDiv[7].classList.add('d-none');
     getRowsDiv[8].classList.remove('p-5');
     getRowsDiv[9].classList.remove('p-5');
@@ -24,6 +26,8 @@ function check(e) {
     getContainer[2].classList.add('pb-5');
     getContainer[2].classList.remove('pb-4');
     getContainer[3].classList.add('pb-5', 'pt-5');
+    getContainer[5].classList.remove('flex-column');
+    getContainer[5].classList.add('_4');
     getRowsDiv[7].classList.remove('d-none');
     getRowsDiv[8].classList.add('p-5');
     getRowsDiv[9].classList.add('p-5');
@@ -39,25 +43,49 @@ width.addEventListener('change', check);
 
 console.log(getContainer);
 
-$('.owl-carousel').owlCarousel({
-  loop: true,
-  margin: 10,
-  // dots: true,
-  responsiveClass: true,
-  navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-  responsive: {
-    0: {
-      items: 1,
-      nav: true,
+$(document).ready(() => {
+  $('.owl-one').owlCarousel({
+    loop: true,
+    margin: 10,
+    // autoplay: true,
+    // autoplayTimeout: 1000,
+    // autoplayHoverPause: true,
+    dots: true,
+    responsiveClass: true,
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
     },
-    600: {
-      items: 3,
-      nav: true,
-    },
+  });
 
-  },
+  $('.owl-two').owlCarousel({
+    loop: true,
+    margin: 10,
+    // autoplay: true,
+    // autoplayTimeout: 1000,
+    // autoplayHoverPause: true,
+    dots: true,
+    responsiveClass: true,
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      // 1000: {
+      //   items: 3,
+      // },
+    },
+  });
 });
-
-// for (let a = 1; a < getRows.length; a += 1) {
-//   getRows[a].classList.add('_4');
-// }
