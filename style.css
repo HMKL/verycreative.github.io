@@ -6,12 +6,12 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
-a,
-p,
-h3,
-h2,
-.nav-link {
-  color: white;
+.nav-link,
+.fa-bars {
+  color: #fff;
+}
+.navbar-toggler {
+  border: none;
 }
 h4 {
   color: #08a1ff;
@@ -32,8 +32,11 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  color: #fff;
 }
-
+textarea {
+  resize: none;
+}
 .support {
   background-image: url(./src/Rectangle\ 63.png);
   background-size: cover;
@@ -48,13 +51,22 @@ ul {
   background-size: cover;
   background-repeat: round;
   background-color: #063964;
+  color: #fff;
 }
 .mask {
   background-image: url(./src/Mask\ Group\ 1.png);
   background-size: cover;
   background-repeat: round;
   background-color: #063964;
+  color: #fff;
   /* height: 100vh; */
+}
+.book {
+  /* background-image: url(./src/bg2.png); */
+  background-size: cover;
+  background-repeat: round;
+  background-color: #063964;
+  color: #fff;
 }
 .fa-phone-flip {
   background-color: #08a1ff;
@@ -62,6 +74,12 @@ ul {
   font-size: 2rem;
   padding: 1rem;
   color: #fff;
+}
+.fa-check {
+  color: #4db9fc;
+  border: 1px solid #4db9fc;
+  border-radius: 50%;
+  padding: 5px;
 }
 .card.one {
   height: 20rem;
@@ -75,6 +93,11 @@ ul {
   background-color: #f4f4f4;
   color: #000;
   border: none;
+}
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 ._1 {
   border-left: 0.5rem solid #08a1ff;

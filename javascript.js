@@ -6,7 +6,9 @@ const getRows = document.querySelectorAll('.row');
 const getContainer = document.querySelectorAll('.container');
 const getImages = document.querySelectorAll('.row > div > img');
 const width = window.matchMedia('(max-width:769px)');
-
+// getRows.forEach((element) => {
+//   element.classList.add('mx-auto');
+// });
 function check(e) {
   if (e.matches) {
     getContainer[2].classList.add('pb-4');
@@ -18,6 +20,7 @@ function check(e) {
     getRowsDiv[8].classList.remove('p-5');
     getRowsDiv[9].classList.remove('p-5');
     getRowsDiv[20].classList.add('_2');
+    getRows[24].classList.add('text-center');
     getRowsDiv[26].classList.remove('d-flex', 'justify-content-end');
     getRows[1].classList.add('d-none');
     getRows[3].classList.add('flex-column-reverse', 'flex-md-row');
@@ -32,6 +35,7 @@ function check(e) {
     getRowsDiv[8].classList.add('p-5');
     getRowsDiv[9].classList.add('p-5');
     getRowsDiv[20].classList.remove('_2');
+    getRows[24].classList.remove('text-center');
     getRowsDiv[26].classList.add('d-flex', 'justify-content-end');
     getRows[1].classList.remove('d-none');
     getRows[3].classList.remove('flex-column-reverse', 'flex-md-row');
@@ -40,8 +44,7 @@ function check(e) {
 }
 check(width);
 width.addEventListener('change', check);
-
-console.log(getContainer);
+console.log(getRows);
 
 $(document).ready(() => {
   $('.owl-one').owlCarousel({
