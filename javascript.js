@@ -5,6 +5,7 @@ const getRowsDiv = document.querySelectorAll('.row > div');
 const getRows = document.querySelectorAll('.row');
 const getContainer = document.querySelectorAll('.container');
 const getImages = document.querySelectorAll('.row > div > img');
+const getSupport = document.querySelectorAll('.support');
 const width = window.matchMedia('(max-width:769px)');
 // getRows.forEach((element) => {
 //   element.classList.add('mx-auto');
@@ -25,6 +26,10 @@ function check(e) {
     getRows[1].classList.add('d-none');
     getRows[3].classList.add('flex-column-reverse', 'flex-md-row');
     getImages[3].classList.add('w-100');
+    getSupport.forEach((element) => {
+      element.classList.remove('support');
+      element.classList.add('_5');
+    });
   } else {
     getContainer[2].classList.add('pb-5');
     getContainer[2].classList.remove('pb-4');
@@ -40,11 +45,15 @@ function check(e) {
     getRows[1].classList.remove('d-none');
     getRows[3].classList.remove('flex-column-reverse', 'flex-md-row');
     getImages[3].classList.remove('w-100');
+    getSupport.forEach((element) => {
+      element.classList.remove('_5');
+      element.classList.add('support');
+    });
   }
 }
 check(width);
 width.addEventListener('change', check);
-console.log(getRows);
+console.log(getRowsDiv);
 
 $(document).ready(() => {
   $('.owl-one').owlCarousel({

@@ -27,6 +27,13 @@ ul {
   left: 0;
   z-index: 1030;
 }
+.input-group-text {
+  background-color: transparent;
+}
+.basic {
+  border-right: transparent;
+  padding: 0.7rem;
+}
 .hero {
   background-image: url(./src/big\ hero.png);
   background-repeat: no-repeat;
@@ -37,10 +44,7 @@ ul {
 textarea {
   resize: none;
 }
-.support {
-  background-image: url(./src/Rectangle\ 63.png);
-  background-size: cover;
-}
+
 .customer {
   background-image: url(./src/customer\ background.png);
   background-size: cover;
@@ -68,11 +72,30 @@ textarea {
   background-color: #063964;
   color: #fff;
 }
-.fa-phone-flip {
-  background-color: #08a1ff;
+.fa-facebook-f.a,
+.fa-twitter.a,
+.fa-instagram.a,
+.fa-linkedin-in.a {
+  margin: 0.5em;
+  font-size: 1em;
   border-radius: 50%;
-  font-size: 2rem;
-  padding: 1rem;
+  padding: 0.5em;
+  width: 2em;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.2);
+  color: #fff;
+}
+.fa-phone-flip,
+.fa-facebook-f.f,
+.fa-twitter.f,
+.fa-instagram.f {
+  margin: 0.5em;
+  font-size: 1.3em;
+  border-radius: 50%;
+  padding: 0.5em;
+  width: 2em;
+  text-align: center;
+  background-color: #08a1ff;
   color: #fff;
 }
 .fa-check {
@@ -80,6 +103,9 @@ textarea {
   border: 1px solid #4db9fc;
   border-radius: 50%;
   padding: 5px;
+}
+.fa-paper-plane {
+  color: #08a1fe;
 }
 .card.one {
   height: 20rem;
@@ -107,10 +133,18 @@ textarea {
   text-align: center;
 }
 ._3 {
-  border-right: 1px dashed grey;
+  border-right: 1px dashed rgb(128, 128, 128);
 }
 ._4 {
   height: 50vh;
+}
+._5 {
+  background-color: rgb(255, 255, 255, 0.3);
+}
+.support {
+  background-color: rgb(255, 255, 255, 0.3);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .owl-carousel .owl-nav.disabled {
   display: block;
@@ -131,4 +165,14 @@ textarea {
 }
 .owl-theme .owl-dots {
   display: none;
+}
+
+.owl-buttons div {
+  position: absolute;
+  top: calc(50% - 25px);
+  height: 50px;
+  width: 50px;
+  line-height: 45px;
+  font-size: 28px !important;
+  margin: 0 !important;
 }
