@@ -64,6 +64,12 @@ textarea {
   background-color: #063964;
   color: #fff;
 }
+.corporate {
+  background-color: #f4f4f4;
+}
+.testimonials {
+  background-color: #fbfbfb;
+}
 .book {
   /* background-image: url(./src/bg2.png); */
   background-size: cover;
