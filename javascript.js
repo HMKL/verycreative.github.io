@@ -113,5 +113,3 @@ $(document).ready(() => {
     },
   });
 });
-
-console.log(getRowsDiv);
