@@ -11,6 +11,7 @@ const width = window.matchMedia('(max-width:769px)');
 
 function check(e) {
   if (e.matches) {
+    getContainer[1].classList.add('text-center');
     getContainer[2].classList.add('pb-4');
     getContainer[2].classList.remove('pb-5');
     getContainer[3].classList.remove('pb-5', 'pt-5');
@@ -32,6 +33,7 @@ function check(e) {
       element.classList.add('_5');
     });
   } else {
+    getContainer[1].classList.remove('text-center');
     getContainer[2].classList.add('pb-5');
     getContainer[2].classList.remove('pb-4');
     getContainer[3].classList.add('pb-5', 'pt-5');
