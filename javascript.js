@@ -6,10 +6,9 @@ const getRows = document.querySelectorAll('.row');
 const getContainer = document.querySelectorAll('.container');
 const getImages = document.querySelectorAll('.row > div > img');
 const getSupport = document.querySelectorAll('.support');
+const getContainerFluid = document.querySelectorAll('.container-fluid');
 const width = window.matchMedia('(max-width:769px)');
-// getRows.forEach((element) => {
-//   element.classList.add('mx-auto');
-// });
+
 function check(e) {
   if (e.matches) {
     getContainer[2].classList.add('pb-4');
@@ -53,7 +52,6 @@ function check(e) {
 }
 check(width);
 width.addEventListener('change', check);
-console.log(getRowsDiv);
 
 $(document).ready(() => {
   $('.owl-one').owlCarousel({

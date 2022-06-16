@@ -176,3 +176,10 @@ textarea {
   font-size: 28px !important;
   margin: 0 !important;
 }
+.owl-two > .owl-stage-outer {
+  box-shadow: 0px 0px 10px 0px #c5c5c5;
+  border-radius: 0.6rem;
+}
+.owl-one > .owl-stage-outer {
+  border-radius: 0.6rem;
+}
