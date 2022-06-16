@@ -16,6 +16,8 @@ function check(e) {
     getContainer[3].classList.remove('pb-5', 'pt-5');
     getContainer[5].classList.add('flex-column');
     getContainer[5].classList.remove('_4');
+    getContainer[6].classList.add('text-center');
+    getContainer[11].classList.add('text-center');
     getRowsDiv[7].classList.add('d-none');
     getRowsDiv[8].classList.remove('p-5');
     getRowsDiv[9].classList.remove('p-5');
@@ -35,6 +37,8 @@ function check(e) {
     getContainer[3].classList.add('pb-5', 'pt-5');
     getContainer[5].classList.remove('flex-column');
     getContainer[5].classList.add('_4');
+    getContainer[6].classList.remove('text-center');
+    getContainer[11].classList.remove('text-center');
     getRowsDiv[7].classList.remove('d-none');
     getRowsDiv[8].classList.add('p-5');
     getRowsDiv[9].classList.add('p-5');
@@ -99,3 +103,5 @@ $(document).ready(() => {
     },
   });
 });
+
+console.log(getContainer);
