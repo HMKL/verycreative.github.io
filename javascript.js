@@ -23,6 +23,10 @@ function check(e) {
     getRowsDiv[8].classList.remove('p-5');
     getRowsDiv[9].classList.remove('p-5');
     getRowsDiv[20].classList.add('_2');
+    getRowsDiv[33].classList.add('d-none');
+    getRowsDiv[37].classList.add('d-none');
+    getRowsDiv[54].classList.add('d-none');
+    getRowsDiv[55].classList.add('d-none');
     getRows[24].classList.add('text-center');
     getRowsDiv[26].classList.remove('d-flex', 'justify-content-end');
     getRows[1].classList.add('d-none');
@@ -45,6 +49,10 @@ function check(e) {
     getRowsDiv[8].classList.add('p-5');
     getRowsDiv[9].classList.add('p-5');
     getRowsDiv[20].classList.remove('_2');
+    getRowsDiv[33].classList.remove('d-none');
+    getRowsDiv[37].classList.remove('d-none');
+    getRowsDiv[54].classList.remove('d-none');
+    getRowsDiv[55].classList.remove('d-none');
     getRows[24].classList.remove('text-center');
     getRowsDiv[26].classList.add('d-flex', 'justify-content-end');
     getRows[1].classList.remove('d-none');
@@ -106,4 +114,4 @@ $(document).ready(() => {
   });
 });
 
-console.log(getContainer);
+console.log(getRowsDiv);
